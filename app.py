@@ -1,5 +1,4 @@
 %%writefile app.py
-
 import streamlit as st
 import pandas as pd
 import joblib
@@ -127,7 +126,7 @@ rating_cols = [
 # Use expander for aesthetic grouping of rating inputs
 with st.expander("Isi Preferensi Membaca Anda"):
     for i in range(0, len(rating_cols), 2):
-        cols = st.columns(2)
+        cols = st.columns(2);
         for j in range(2):
             if i + j < len(rating_cols):
                 col_name = rating_cols[i+j]
